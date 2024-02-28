@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE GESTÃO ACADÊMICA</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .formulario {
+            margin-left: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: aqua;">
+        <h4>SISTEMA DE GESTÃO ACADÊMICA</h4>
+    </div>
+
+    <h3>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h3>
+    <form>
+        <h4>Login <input type="text" name="nome" class="formulario"></h4>
+        <h4>Senha <input type="password" name="senha" class="formulario"></h4>
+        <h4>Status
+            <select name="status" id="status" class="formulario">
+                <option value="ativo">Ativo</option>
+                <option value="inativo">Inativo</option>
+            </select>
+        </h4>
+        <h4>Tipo
+            <input type="radio" id="tecnico" name="tipo" value="Técnico" class="formulario">
+            <label for="tecnico">Técnico</label>
+            <input type="radio" id="professor" name="tipo" value="Professor">
+            <label for="professor">Professor</label>
+            <input type="radio" id="aluno" name="tipo" value="Aluno">
+            <label for="aluno">Aluno</label>
+        </h4>
+        <h4>Data Criação <input type="date" name="data" class="formulario"></h4>
+        <h4>Perfil
+            <input type="radio" id="convidado" name="perfil" value="convidado" class="formulario">
+            <label for="convidado">Convidado</label>
+            <input type="radio" id="administrador" name="perfil" value="Administrador">
+            <label for="administrador">Administrador</label>
+        </h4>
+        <span>
+            <h4 style="display: inline;">Observações:</h4>
+            <h4 style="display: inline"><textarea cols="60" rows="5" class="formulario"></textarea>
+            </h4>
+        </span>
+        <h4>Módulos
+            <input type="checkbox" id="Compras" class="formulario">
+            <label for="Compras"> Compras</label>
+            <input type="checkbox" id="Biblioteca">
+            <label for="Biblioteca"> Biblioteca</label>
+            <input type="checkbox" id="Acadêmico">
+            <label for="academico"> Acâdemico</label><br>
+            <input type="checkbox" id="Documentação" class="formulario" style="margin-left: 150px">
+            <label for="documentação"> Documentação</label>
+            <input type="checkbox" id="Recursos Humanos">
+            <label for="RH"> Recursos Humanos</label><br>
+        </h4>
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Excluir">
+    </form>
+</body>
+
+</html>

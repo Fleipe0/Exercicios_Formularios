@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .formulario {
+            margin-left: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="0" width="100%">
+        <tr>
+            <td width="60%">
+                <h4 style="background-color: aqua;">Não é associado? Faça seu cadastro</h4>
+            </td>
+            <td width="40%">
+                <h4 style="background-color: darkblue; color:darkblue">.</h4>
+            </td>
+        </tr>
+    </table>
+    </div>
+    </div>
+    <form>
+        <h4>Nome <input type="text" name="nome" class="formulario"></h4>
+        <h4>Nome Completo <input type="text" name="nomecompleto" class="formulario"></h4>
+        <h4>CPF<input type="number" name="cpf" class="formulario"></h4>
+        <h4>E-mail <input type="email" name="email" class="formulario"></h4>
+        <h4>Website <input type="text" name="website" class="formulario"></h4>
+        <h4>Endereço <input type="text" name="endereço" class="formulario"></h4>
+        <h4>Bairro <input type="text" name="bairro" class="formulario" style="margin-right: 70px">Cidade <input
+                type="text" name="cidade"></h4>
+        <h4>CEP<input type="number" name="cep" class="formulario" style="margin-right: 70px">
+            UF <select id="estado" name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select></h4>
+        <h4>Telefone<input type="tel" name="tel" class="formulario" style="margin-right: 70px"> Fax<input type="tel"
+                name="fax" class="formulario"></h4>
+        <h4>Data de Nascimento <input type="date" name="data" class="formulario" style="margin-right: 70px;">
+            Sexo
+            <input type="radio" id="M" name="sexo">
+            <label for="M">M</label>
+            <input type="radio" id="F" name="sexo">
+            <label for="F">F</label>
+        </h4>
+        <h4>Celular<input type="tel" name="tel" class="formulario" style="margin-right: 70px">
+            Est. Civil
+            <select name="status" id="status" class="formulario">
+                <option value="Solteiro">Solteiro</option>
+                <option value="Casado">Casado</option>
+                <option value="Viúvo">Viúvo</option>
+                <option value="Divorciado">Divorciado</option>
+            </select>
+        </h4>
+        <h4>Login <input type="text" name="nome" class="formulario" style="margin-right: 70px">
+            Senha <input type="password" name="senha" class="formulario"></h4>
+        <h4>Deseja receber informações sobre o seguinte assunto abaixo:</h4>
+            <input type="checkbox">
+            <label for="Compras"> Tecnologia</label>
+            <input type="checkbox">
+            <label for="Compras"> Esportes</label>
+            <input type="checkbox">
+            <label for="Compras"> Automóveis</label>
+            <input type="checkbox">
+            <label for="Compras"> Culinária</label>
+            <input type="checkbox">
+            <label for="Compras"> Política</label>
+            <input type="checkbox">
+            <label for="Compras"> Policial</label>
+            <input type="checkbox">
+            <label for="Compras"> Tempo</label><br>
+            <input type="checkbox">
+            <label for="Compras"> Cultura</label>
+            <input type="checkbox">
+            <label for="Compras"> Economia</label>
+            <input type="checkbox">
+            <label for="Compras"> Jogos</label>
+            <input type="checkbox">
+            <label for="Compras"> Educação</label>
+            <input type="checkbox">
+            <label for="Compras"> Viagem</label>
+            <input type="checkbox">
+            <label for="Compras"> Empregos</label>
+            <input type="checkbox">
+            <label for="Compras"> Moda e Estilo</label><br><br>
+        </h4>
+        <input type="checkbox" id="regras">
+        <label for="termos"> Li as regras de cadastro e autorio a criação do usuário</label><br><br>
+        <input type="submit" value="Confirmar">
+        <input type="reset" value="Retornar">
+    </form>
+</body>
+
+</html>
